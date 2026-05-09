@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #d35400;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .category-section {
+            margin-bottom: 30px;
+        }
+
+        .category-header {
+            border-bottom: 2px solid #d35400;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+        }
+
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            gap: 20px;
+        }
+
+        .menu-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+        .price {
+            color: #d35400;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>RESTAURANT MENU</h1>
+        <nav>
+            <a href="#starters">Starters</a>
+            <a href="#main-course">Main Course</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#drinks">Drinks</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Starters Category -->
+        <div id="starters" class="category-section">
+            <div class="category-header">
+                <h2>Starters</h2>
+            </div>
+            <ul class="menu-list">
+                <!-- Item 1 -->
+                <li class="menu-card">
+                    <img src="assets/1.jpg" alt="Signature Appetizer">
+                    <div class="card-content">
+                        <h3>Signature Appetizer</h3>
+                        <p>A delightful blend of fresh ingredients and exquisite flavors, crafted to perfection for your
+                            enjoyment.</p>
+                        <span class="price">₹159</span>
+                    </div>
+                </li>
+                <!-- Item 2 -->
+                <li class="menu-card">
+                    <img src="assets/2.jpg" alt="Premium Starter">
+                    <div class="card-content">
+                        <h3>Premium Starter</h3>
+                        <p>Experience the rich heritage of culinary arts with this specially prepared signature dish.
+                        </p>
+                        <span class="price">₹185</span>
+                    </div>
+                </li>
+                <!-- Item 3 -->
+                <li class="menu-card">
+                    <img src="assets/3.jpg" alt="Classic Beef Burger">
+                    <div class="card-content">
+                        <h3>Classic Beef Burger</h3>
+                        <p>Freshly sourced seasonal ingredients combined to create a symphony of tastes on your palate.
+                        </p>
+                        <span class="price">₹229</span>
+                    </div>
+                </li>
+                <!-- Item 4 -->
+                <li class="menu-card">
+                    <img src="assets/4.jpg" alt="Cheese Blast Burger">
+                    <div class="card-content">
+                        <h3>Cheese Blast Burger</h3>
+                        <p>A perfect balance of textures and aromas, this dish is a favorite among our regular patrons.
+                        </p>
+                        <span class="price">₹249</span>
+                    </div>
+                </li>
+                <!-- Item 5 -->
+                <li class="menu-card">
+                    <img src="assets/5.jpg" alt="Veggie Supreme Burger">
+                    <div class="card-content">
+                        <h3>Veggie Supreme Burger</h3>
+                        <p>Carefully curated flavors that bring out the best in traditional and modern cooking
+                            techniques.
+                        </p>
+                        <span class="price">₹199</span>
+                    </div>
+                </li>
+                <!-- Item 6 -->
+                <li class="menu-card">
+                    <img src="assets/6.jpg" alt="Spicy Chicken Burger">
+                    <div class="card-content">
+                        <h3>Spicy Chicken Burger</h3>
+                        <p>Light, refreshing, and packed with nutrition – a great choice for a healthy yet satisfying
+                            meal.
+                        </p>
+                        <span class="price">₹219</span>
+                    </div>
+                </li>
+                <!-- Item 7 -->
+                <li class="menu-card">
+                    <img src="assets/7.jpg" alt="Classic French Fries">
+                    <div class="card-content">
+                        <h3>Classic French Fries</h3>
+                        <p>Indulge in this rich and creamy creation that promises a truly memorable dining experience.
+                        </p>
+                        <span class="price">₹129</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Course Category -->
+        <div id="main-course" class="category-section">
+            <div class="category-header">
+                <h2>Main Course</h2>
+            </div>
+            <ul class="menu-list">
+                <!-- Item 8 -->
+                <li class="menu-card">
+                    <img src="assets/8.jpg" alt="Peri Peri Fries">
+                    <div class="card-content">
+                        <h3>Peri Peri Fries</h3>
+                        <p>A spicy and bold choice for those who love a kick in their meal, made with authentic spices.
+                        </p>
+                        <span class="price">₹149</span>
+                    </div>
+                </li>
+                <!-- Item 9 -->
+                <li class="menu-card">
+                    <img src="assets/9.jpg" alt="Cheesy Loaded Fries">
+                    <div class="card-content">
+                        <h3>Cheesy Loaded Fries</h3>
+                        <p>Savory and succulent, this dish is prepared slow-cooked to ensure maximum flavor infusion.
+                        </p>
+                        <span class="price">₹179</span>
+                    </div>
+                </li>
+                <!-- Item 10 -->
+                <li class="menu-card">
+                    <img src="assets/10.jpg" alt="Sweet Potato Fries">
+                    <div class="card-content">
+                        <h3>Sweet Potato Fries</h3>
+                        <p>A classic reinvented with a modern twist, using only the highest quality organic produce.</p>
+                        <span class="price">₹159</span>
+                    </div>
+                </li>
+                <!-- Item 11 -->
+                <li class="menu-card">
+                    <img src="assets/11.jpg" alt="Garden Fresh Salad">
+                    <div class="card-content">
+                        <h3>Garden Fresh Salad</h3>
+                        <p>Crispy on the outside, tender on the inside – a texture lover's dream come true.</p>
+                        <span class="price">₹189</span>
+                    </div>
+                </li>
+                <!-- Item 12 -->
+                <li class="menu-card">
+                    <img src="assets/12.jpg" alt="Quinoa Power Bowl">
+                    <div class="card-content">
+                        <h3>Quinoa Power Bowl</h3>
+                        <p>A fusion of international cuisines that brings a unique perspective to your plate.</p>
+                        <span class="price">₹249</span>
+                    </div>
+                </li>
+                <!-- Item 13 -->
+                <li class="menu-card">
+                    <img src="assets/13.jpg" alt="Grilled Tofu Salad">
+                    <div class="card-content">
+                        <h3>Grilled Tofu Salad</h3>
+                        <p>Elegant presentation meets deep, earthy flavors in this chef-recommended specialty.</p>
+                        <span class="price">₹219</span>
+                    </div>
+                </li>
+                <!-- Item 14 -->
+                <li class="menu-card">
+                    <img src="assets/14.jpg" alt="Fresh Fruit Medley">
+                    <div class="card-content">
+                        <h3>Fresh Fruit Medley</h3>
+                        <p>A hearty and comforting dish that feels like a warm hug on a cold day.</p>
+                        <span class="price">₹169</span>
+                    </div>
+                </li>
+                <!-- Item 15 -->
+                <li class="menu-card">
+                    <img src="assets/15.jpg" alt="Classic Hakka Noodles">
+                    <div class="card-content">
+                        <h3>Classic Hakka Noodles</h3>
+                        <p>Exotic ingredients sourced from across the globe to give you a taste of adventure.</p>
+                        <span class="price">₹189</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Desserts Category -->
+        <div id="desserts" class="category-section">
+            <div class="category-header">
+                <h2>Desserts</h2>
+            </div>
+            <ul class="menu-list">
+                <!-- Item 16 -->
+                <li class="menu-card">
+                    <img src="assets/16.jpg" alt="Schezwan Noodles">
+                    <div class="card-content">
+                        <h3>Schezwan Noodles</h3>
+                        <p>Simple yet sophisticated, focusing on the pure essence of every single ingredient.</p>
+                        <span class="price">₹199</span>
+                    </div>
+                </li>
+                <!-- Item 17 -->
+                <li class="menu-card">
+                    <img src="assets/17.jpg" alt="Garlic Butter Noodles">
+                    <div class="card-content">
+                        <h3>Garlic Butter Noodles</h3>
+                        <p>A colorful and vibrant plate that is as pleasing to the eye as it is to the taste buds.</p>
+                        <span class="price">₹209</span>
+                    </div>
+                </li>
+                <!-- Item 18 -->
+                <li class="menu-card">
+                    <img src="assets/18.jpg" alt="Egg Chowmein">
+                    <div class="card-content">
+                        <h3>Egg Chowmein</h3>
+                        <p>Slow-roasted to perfection, capturing all the natural juices and intense flavors.</p>
+                        <span class="price">₹219</span>
+                    </div>
+                </li>
+                <!-- Item 19 -->
+                <li class="menu-card">
+                    <img src="assets/19.jpg" alt="Chocolate Lava Cake">
+                    <div class="card-content">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>A sweet and savory combination that surprises and delights with every bite.</p>
+                        <span class="price">₹149</span>
+                    </div>
+                </li>
+                <!-- Item 20 -->
+                <li class="menu-card">
+                    <img src="assets/20.jpg" alt="New York Cheesecake">
+                    <div class="card-content">
+                        <h3>New York Cheesecake</h3>
+                        <p>Artisanal preparation methods passed down through generations for an authentic taste.</p>
+                        <span class="price">₹179</span>
+                    </div>
+                </li>
+                <!-- Item 21 -->
+                <li class="menu-card">
+                    <img src="assets/21.jpg" alt="Red Velvet Pastry">
+                    <div class="card-content">
+                        <h3>Red Velvet Pastry</h3>
+                        <p>Rich, dark, and decadent – a chocolate lover's ultimate fantasy on a plate.</p>
+                        <span class="price">₹129</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Drinks Category -->
+        <div id="drinks" class="category-section">
+            <div class="category-header">
+                <h2>Drinks</h2>
+            </div>
+            <ul class="menu-list">
+                <!-- Item 22 -->
+                <li class="menu-card">
+                    <img src="assets/22.jpg" alt="Vanilla Ice Cream">
+                    <div class="card-content">
+                        <h3>Vanilla Ice Cream</h3>
+                        <p>Refreshing citrus notes paired with delicate seafood for a light summer meal.</p>
+                        <span class="price">₹99</span>
+                    </div>
+                </li>
+                <!-- Item 23 -->
+                <li class="menu-card">
+                    <img src="assets/23.jpg" alt="Spinach & Kale Smoothie">
+                    <div class="card-content">
+                        <h3>Spinach & Kale Smoothie</h3>
+                        <p>A rustic dish that celebrates the bounty of the land with robust and smoky flavors.</p>
+                        <span class="price">₹149</span>
+                    </div>
+                </li>
+                <!-- Item 24 -->
+                <li class="menu-card">
+                    <img src="assets/24.jpg" alt="Fresh Mint Lemonade">
+                    <div class="card-content">
+                        <h3>Fresh Mint Lemonade</h3>
+                        <p>Delicate pastry work filled with a savory surprise that melts in your mouth.</p>
+                        <span class="price">₹119</span>
+                    </div>
+                </li>
+                <!-- Item 25 -->
+                <li class="menu-card">
+                    <img src="assets/25.jpg" alt="Tropical Fruit Punch">
+                    <div class="card-content">
+                        <h3>Tropical Fruit Punch</h3>
+                        <p>Infused with aromatic herbs and garlic, this dish is a sensory masterpiece.</p>
+                        <span class="price">₹139</span>
+                    </div>
+                </li>
+                <!-- Item 26 -->
+                <li class="menu-card">
+                    <img src="assets/26.jpg" alt="Iced Caramel Macchiato">
+                    <div class="card-content">
+                        <h3>Iced Caramel Macchiato</h3>
+                        <p>The perfect ending to your meal, a balanced dessert that is light yet satisfying.</p>
+                        <span class="price">₹159</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer
+        style="text-align: center; padding: 2rem; background: var(--primary-color); color: white; margin-top: 2rem;">
+        <p>&copy; 2026 Restaurant Menu. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
